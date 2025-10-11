@@ -239,22 +239,40 @@
     </div>
   </section>
 
-  <section id="videos" class="videos-section fade-in">
-    <div class="container">
-      <h2>Music Videos</h2>
-      <div class="video-grid">
-        <div class="video-item">
-          <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/OssSK2MbHiY" title="Paralyzed — DayzeMusic" frameborder="0" allowfullscreen></iframe>
+<section id="videos" class="videos-section fade-in">
+  <div class="container">
+    <h2>Music Videos</h2>
+    <div class="video-grid">
+      <div class="video-item" data-video="OssSK2MbHiY">
+        <div class="video-thumb" style="position:relative;cursor:pointer;">
+          <img loading="lazy" src="https://img.youtube.com/vi/OssSK2MbHiY/hqdefault.jpg" alt="Paralyzed — DayzeMusic" style="width:100%;border-radius:12px;border:3px solid #780000;">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:3rem;color:#fdf0d5;">
+            <i class="fa-solid fa-play-circle"></i>
+          </div>
         </div>
-        <div class="video-item">
-          <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/tJF-7jqalvM" title="Family Tree — DayzeMusic" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video-item" data-video="tJF-7jqalvM">
+        <div class="video-thumb" style="position:relative;cursor:pointer;">
+          <img loading="lazy" src="https://img.youtube.com/vi/tJF-7jqalvM/hqdefault.jpg" alt="Family Tree — DayzeMusic" style="width:100%;border-radius:12px;border:3px solid #780000;">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:3rem;color:#fdf0d5;">
+            <i class="fa-solid fa-play-circle"></i>
+          </div>
         </div>
-        <div class="video-item">
-          <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/-Z7AtGkQt6A?si=GjHjGXJ6-l2qUvls" title="Livin' Blind — DayzeMusic" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div class="video-item" data-video="-Z7AtGkQt6A">
+        <div class="video-thumb" style="position:relative;cursor:pointer;">
+          <img loading="lazy" src="https://img.youtube.com/vi/-Z7AtGkQt6A/hqdefault.jpg" alt="Livin' Blind — DayzeMusic" style="width:100%;border-radius:12px;border:3px solid #780000;">
+          <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:3rem;color:#fdf0d5;">
+            <i class="fa-solid fa-play-circle"></i>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <section id="shows" class="shows-section fade-in">
     <div class="container shows-inner">
@@ -342,5 +360,26 @@
 
     })();
   </script>
+  
+  <script>
+  // Lightweight YouTube loader to defer YouTube JS
+  document.querySelectorAll('.video-item').forEach(item => {
+    const id = item.dataset.video;
+    const thumb = item.querySelector('.video-thumb');
+    thumb.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1`;
+      iframe.title = 'YouTube video player';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+      iframe.style.width = '100%';
+      iframe.style.borderRadius = '12px';
+      iframe.style.border = '3px solid #780000';
+      item.innerHTML = '';
+      item.appendChild(iframe);
+    });
+  });
+</script>
+
 </body>
 </html>
