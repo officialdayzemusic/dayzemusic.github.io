@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Full Discography — Dayze Music</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=News+Cycle&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:'News Cycle',sans-serif;background:#fdf0d5;color:#003049;line-height:1.6;overflow-x:hidden}
+    .container{width:90%;max-width:1200px;margin:0 auto}
+
+    /* Header */
+    .site-header{background:rgba(120,0,0,.9);backdrop-filter:blur(6px);color:#fdf0d5;position:sticky;top:0;z-index:1000}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0}
+    .logo img{height:55px;width:auto}
+    .site-nav ul{display:flex;gap:1.5rem;list-style:none}
+    .site-nav a{color:#fdf0d5;text-decoration:none;font-weight:700;position:relative;padding-bottom:.2rem}
+    .site-nav a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#fdf0d5;transition:width .3s}
+    .site-nav a:hover::after{width:100%}
+    .nav-toggle{display:none;background:none;border:0;font-size:1.8rem;color:#fdf0d5}
+    @media(max-width:768px){
+      .site-nav ul{display:none;flex-direction:column;background:rgba(120,0,0,.95);position:absolute;top:100%;right:0;width:220px;text-align:right;padding:1rem}
+      .site-nav ul.show{display:flex}
+      .nav-toggle{display:block}
+    }
+
+    /* Discography Page Layout */
+    .discography-page{padding:5rem 0;background:#003049;color:#fdf0d5;min-height:100vh}
+    .discography-page h1{text-align:center;font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:3rem}
+    .disc-section{margin-bottom:4rem}
+    .disc-section h2{font-family:'Playfair Display',serif;font-size:2.3rem;margin-bottom:1.5rem;text-align:center}
+    .discography-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+    .disc-item{background:#fdf0d5;color:#003049;text-decoration:none;border-radius:12px;overflow:hidden;transition:transform .25s,box-shadow .25s;text-align:center;display:block}
+    .disc-item:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(253,240,213,.4)}
+    .disc-item img{width:100%;height:auto;display:block}
+    .disc-title{padding:.8rem;font-weight:700}
+    .site-footer{background:#780000;color:#fdf0d5;text-align:center;padding:1.5rem 0;margin-top:3rem}
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html"><img src="https://i.ibb.co/fzw1djNb/Hourglass-w-Crown-Dayze-Music.webp" alt="Dayze Logo"></a>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#next-release">Next Release</a></li>
+          <li><a href="index.html#discography">Discography</a></li>
+          <li><a href="full-discography.html" aria-current="page">Full Discography</a></li>
+          <li><a href="index.html#videos">Music Videos</a></li>
+          <li><a href="index.html#shows">Upcoming Shows</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main class="discography-page">
+    <div class="container">
+      <h1>Full Discography</h1>
+
+      <!-- Self Released Projects -->
+      <section class="disc-section" id="self-released">
+        <h2>Self Released Projects</h2>
+        <div class="discography-grid">
+
+          <!-- ==== Replace everything below with your 21 actual releases ==== -->
+          <a class="disc-item" href="https://open.spotify.com/track/5vz5VOu0KHdiyw5RPZuG0o?si=ce5aa928e8cb41b1" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/8gMD5M6m/Lost-My-Sight.webp" alt="Project 1 cover">
+            <div class="disc-title">Lost My Sight</div>
+          </a>
+
+          <a class="disc-item" href="https://open.spotify.com/track/3snAgFX54K3AWs3Gsqr0mg?si=9528a7cb1e314f8e" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/xtvBCn8T/Push-or-Shove.webp" alt="Project 2 cover">
+            <div class="disc-title">Push or Shove</div>
+          </a>
+
+          <a class="disc-item" href="https://open.spotify.com/album/6SMOh5yu5oFbu1UQssiu1m?si=DynqDs42RCyPxjxAhMbbjw" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/sxf7yP9/Batman-and-Robin.webp" alt="Project 3 cover">
+            <div class="disc-title">Batman and Robin ft antzmusic2024</div>
+          </a>
+
+          <a class="disc-item" href="https://open.spotify.com/album/2PLgLxwYXcGTjm46qoBM5V?si=zgT_m4VaSyy3vr3uywXz0Q" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/ksSFZRkR/Standing-Here.webp" alt="Project 3 cover">
+            <div class="disc-title">Standing Here</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/2LyNkDn72H2bUgLWWkRgS1?si=ZL3bN1HiTcupCfxczvUn7Q" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/Xrwc1Bk1/Dayze-d-and-Confused.webp" alt="Project 3 cover">
+            <div class="disc-title">Dayze'd and Confused</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/1mJbLSysjYgqoSoO6LGRM9?si=ba82e49c691e48bd" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/4RJSDkVv/Darkness.webp" alt="Project 3 cover">
+            <div class="disc-title">Darkness</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/3s5O10n5gW90mYHrzHXTSo?si=Iq_916niSve9dahX07O-2g" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/xpfrTpy/COFFIN-TALK.webp" alt="Project 3 cover">
+            <div class="disc-title">COFFIN TALK</div>
+          </a>
+          
+           <a class="disc-item" href="https://open.spotify.com/track/09rdecGVbkxhNhFok6PnGB?si=63bfbedb147949c7" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/tTsXfdDL/Outside.webp" alt="Project 3 cover">
+            <div class="disc-title">Outside</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/64ka8Y1qojax76v0GmrvAm?si=bc0ef07a6eef473a" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/g2mWBCm/WHERE-I-M-FROM.webp" alt="Project 3 cover">
+            <div class="disc-title">WHERE I'M FROM</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/32R5rfNVdoHiDRf44XRj5c?si=49256ebcf0e1465c" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/8gyVM3zM/Switch.webp" alt="Project 3 cover">
+            <div class="disc-title">Switch</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/3STiiZa8TlbJbqAXh5iOHi?si=3d1f1d0017794766" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/PzvHjwKS/USELESS.webp" alt="Project 3 cover">
+            <div class="disc-title">USELESS</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/7vhltyBjVQQIiUuhhm9JJ5?si=xBV1wuuPT8ybc1-2VBsLtg" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/d0TShtXX/At-The-Homefront.webp" alt="Project 3 cover">
+            <div class="disc-title">At The Homefront</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/5Qhvze31e5RCUzaozVVDNy?si=53b4f0ce57b944a9" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/wrNkyGsD/M-Raz-n-My-Reason.webp" alt="Project 3 cover">
+            <div class="disc-title">Mí Razón (My Reason)</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/65aPvU6JYjRrG0PjfMvQtf?si=DmTA0PybRVu8BkOyVebf7A" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/kgfKYR0w/Same-Dave.webp" alt="Project 3 cover">
+            <div class="disc-title">Same Dave</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/36P1uLnzDIIO5IuKeXk0e4?si=7992cc96630c4b5a" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/v6HVvz86/Ven-y-nete-a-m.webp" alt="Project 3 cover">
+            <div class="disc-title">Ven Y únete A Mí</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/0Zh8OXQjB2HimqQhQ3eIS9?si=d6676178924b4991" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/FLwRQ3BL/Grew-Apart.webp" alt="Project 3 cover">
+            <div class="disc-title">Grew Apart</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/23TDZdUWWp7FPeGBwyGCPu?si=15de81493f264439" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/Hp2FLbHn/Paralyzed.webp" alt="Project 3 cover">
+            <div class="disc-title">Paralyzed</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/14qdJaLkP9mAczS53D9fFQ?si=6a562c63d37a4119" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/4g37F3FB/Need-a-Minute.webp" alt="Project 3 cover">
+            <div class="disc-title">Need a Minute</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/track/5V9qtC9nqBaO3hSyBTuqIC?si=93e10fb446904991" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/VYmbBvGp/Tell-Me-How-I-m-Lonely.webp" alt="Project 3 cover">
+            <div class="disc-title">Tell Me How I'm Lonely</div>
+          </a>
+          
+          
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="disc-section" id="features">
+        <h2>Features</h2>
+        <div class="discography-grid">
+
+          <a class="disc-item" href="https://open.spotify.com/track/2AOiR16r9mYeg5x7yrdp3I?si=7633542b48934dda" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/XfGMbhXv/Howl.webp" alt="Feature 1 cover">
+            <div class="disc-title">Howl</div>
+          </a>
+
+          <a class="disc-item" href="https://open.spotify.com/album/33Wlii1dREnBXoFTFiS67l?si=_EP6XTriQDmkwmoW4g7Qyw" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/4RJSDkVv/Darkness.webp" alt="Feature 2 cover">
+            <div class="disc-title">Purgatory</div>
+          </a>
+
+          <a class="disc-item" href="https://open.spotify.com/album/1ChmCOKHZm2zjWsdTfLnRg?si=8rbro8vcR9q24S6zFfCNEQ" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/8gGNJvMt/Second-Chance.webp" alt="Feature 3 cover">
+            <div class="disc-title">Second Chance</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/05pleJzJZ3cJzTVXuOENzJ?si=-fmTP4QdSxS5D85mxjO_tQ" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/Z6nwB6T9/Odelia.webp" alt="Feature 3 cover">
+            <div class="disc-title">Odelia</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/6n5mAxgVG7R5ky8pficZlO?si=AqXWuRMrTG-kUfF_KkujeQ" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/dJJTpMq5/Cronus.webp" alt="Feature 3 cover">
+            <div class="disc-title">Cronus</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/0eOnzh1zgoxaUGrKBpPkfP?si=-fVRSul_Q_qw09AqrLvucQ" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/7JfGfHVr/Trouble-mind.webp" alt="Feature 3 cover">
+            <div class="disc-title">Trouble mind</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/6UGlPh0NYeiwI0n0zhFZIj?si=-keGoMKqSIK1aq-IRRW1VA" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/9Hbzdq74/Jumpstart.webp" alt="Feature 3 cover">
+            <div class="disc-title">Jumpstart</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/5I0yTU3B7BgZvZrev6JgZN?si=xpqz1u_5RdKRxOVU4cn9yQ" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/B2jk2m0M/I-m-On-My-Way.webp" alt="Feature 3 cover">
+            <div class="disc-title">I'm On My Way</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/5U8Tn78SKRzHYAldy6AK9S?si=UM4ZETrJSbe0DBsD0rh07w" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/C5SSMHRw/Call-It-Quits.webp" alt="Feature 3 cover">
+            <div class="disc-title">Call It Quits</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/4O0rSCYI0KLwhtTqvxjDPX?si=pXUHE3fzSz6jGd9lDynIDQ" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/VPgRJJV/Right-From-Wrong-Special-Version.webp" alt="Feature 3 cover">
+            <div class="disc-title">Right From Wrong (Special Version)</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/3bDV8BmFQmIt3oAt7G0KWq?si=9ZE0CuSsQQKcdEsamXlGzw" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/3ytSNBnS/Truth.webp" alt="Feature 3 cover">
+            <div class="disc-title">Truth</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/0vV9iMbpYwGtqsFSZhbjis?si=RbZrj39fTQGoE8svjsv0-A" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/x8MrZ9SX/Nightmare-Remix.webp" alt="Feature 3 cover">
+            <div class="disc-title">Nightmare (Remix)</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/1Ixr0UYfnpPzCHoJA7jCcS?si=ekbbOGKBT6iIOxO3tdWcwA" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/6V6mWKS/Three-Leaf-Clover.webp" alt="Feature 3 cover">
+            <div class="disc-title">Three Leaf Clover</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/6Gwf7YX7ZACMzooU0AjuRp?si=wSPXhJ4CRKWo7hAsrPkT1Q" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/M5VMfNFv/Cloud-Nine.webp" alt="Feature 3 cover">
+            <div class="disc-title">Cloud Nine</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/3gjNxpXMiwdv02FhEVlS5x?si=lXqHQnNtSSeGUWL3Qo062Q" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/NgfrnjnG/Insubordinate.webp" alt="Feature 3 cover">
+            <div class="disc-title">Insubordinate</div>
+          </a>
+          
+          <a class="disc-item" href="https://open.spotify.com/album/5AHMPcf1STwqSYTmhhwXO6?si=qWgEfuo8S_qe2t2AIfPgRg" target="_blank" rel="noopener">
+            <img src="https://i.ibb.co/Y7CjY7jy/Take-My-Thoughts-Away.webp" alt="Feature 3 cover">
+            <div class="disc-title">Take My Thoughts Away</div>
+          </a>
+
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Dayze Records. All rights reserved.</p></div>
+  </footer>
+
+  <script>
+    const navToggle=document.querySelector('.nav-toggle');
+    const navList=document.querySelector('.site-nav ul');
+    navToggle.addEventListener('click',()=>navList.classList.toggle('show'));
+  </script>
+
+</body>
+</html>
